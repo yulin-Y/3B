@@ -4037,3 +4037,24 @@ input, select, textarea {
 		width: 100%;
 		text-align: center;
 	}
+	/* mobile */
+	@media screen and (max-width: 980px) {
+		.spotlights > section > .image.video-frame {
+			width: 100%;
+			height: auto;
+			min-height: 0;
+		}
+
+		.video-frame video {
+			width: 100%;
+			height: auto;
+			min-height: 0;
+			object-fit: contain;
+		}
+	}
+
+	@media screen and (max-width: 736px) {
+		.project-buttons {
+			grid-template-columns: 1fr;
+		}
+	}
